@@ -1,0 +1,95 @@
+#frontline{
+	margin-top: 50px;
+	width: 100%;
+	float:top; 
+	margin-bottom:25px;
+	display:inline-block;
+}
+
+#carousel{
+	height:350px;
+	width:100%;
+	margin-top:25px;
+	clear:both;
+}
+
+#todayBoard{
+	margin:auto;
+	position:relative;
+	float:left;
+	width:50%;
+}
+
+#piechart{
+	float:left;
+	margin:auto;
+	position:relative;
+	width: 50%; 
+	height:400px;
+}
+
+#todayTable{
+	float:right;
+	margin:auto;
+	position:relative;
+	width: 50%;
+	height: 400px;
+}
+
+#todayinfos{
+	height: 120px;
+	margin: auto;
+	margin-top:140px;
+	position: relative;
+	
+}
+
+#piechart div{
+	margin:auto;
+}
+
+#progressbar{
+	height:15px;
+	width:200px;
+}
+
+.slotfocus{
+	width:0%;
+	height:400px;
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	margin-right:0px;
+}
+
+#weekchart{
+	float:left;
+	position:relative;
+	width: 50%;
+	height: 400px;
+	margin:auto;
+}
+
+#weekchart div {
+	margin:auto;
+}
+
+#weekchart div {
+	margin-top:35px;
+}
+
+
+
+.columnchart{
+	width: 400px;
+	position:relative;
+	margin: auto;
+}
+
+.focuschart{
+	width:150;
+	float:left;
+	position:relative;
+}
+
+

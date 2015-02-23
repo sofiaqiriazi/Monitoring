@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id = "frontline" >
+<div id="todayBoard" >
+
+<div  id="piechart"></div>
+
+<div id="todayTable" >
+<div id="todayinfos" >
+<div id ="progressbar" ></div>
+</div>
+</div>
+</div>
+
+<div class ="slotfocus" ></div>
+<div id="weekchart"></div>
+</div>
+
+<div id="carousel">
+<div style="float:left;" class="controls center">
+<div class="btn prev disabled" disabled="">
+<i class="icon-chevron-left">
+<img class="arrowmove" src="../../static/statistics/img/arrow-prev.png" alt="prev" />
+</i>
+</div>
+</div>
+
+<div class="wrap" >
+<div class="scrollbar">
+<div class="handle" style=" width: 190px;">
+<div class="mousearea"></div>
+</div>
+</div>
+
+
+<div id="frame" class="frame" style="overflow: hidden; ">
+<ul class="slidee" style="width: 6840px;"></ul>
+</div>
+
+</div>
+
+<div style ="float:left;" class="controls center">
+<div class="btn next">
+<i class="icon-chevron-right">
+<img class="arrowmove" src="../../static/statistics/img/arrow-next.png" alt="next" />
+</i>
+</div>
+</div>
+</div>
+{% endblock content %}

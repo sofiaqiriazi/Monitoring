@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8"/>
+
+<title>Statistics</title>
+<link href="static/statistics/img/lhcb_logo_icon.png" rel="icon" type="image/png"/>
+<link href="static/statistics/css/coverflow.css" type='text/css' rel='stylesheet' />
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'/>
+<link href="https://framework.web.cern.ch/framework/2.0/cern_toolbar/css/toolbar.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://framework.web.cern.ch/framework/1.0/print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="https://framework.web.cern.ch/framework/1.0/screen.css" rel="stylesheet" type="text/css" media="screen" />
+<link media="only screen and (max-device-width: 480px)" href="https://framework.web.cern.ch/framework/1.0/css/iphone.css" type="text/css" rel="stylesheet" />
+<link href="https://lhcb.web.cern.ch/lhcb/lhcb_page/custom.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="static/statistics/css/lhcb-theme/jquery-ui-1.10.2.custom.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="../../static/statistics/css/dashboard.css" type='text/css'/>
+<link rel="stylesheet" href="../../static/statistics/css/stats.css" type='text/css'/>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+       'version':'1','packages':['timeline']}]}"></script>
+<script src="//code.jquery.com/jquery-1.11.1.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script src = "static/statistics/js/Chart.js-master/Chart.js" ></script>
+<script src = "static/statistics/js/moment.js "></script>
+<script src="static/statistics/js/sly.min.js"></script>
+<script src ="static/statistics/js/main.js"></script>
+</head>
+
+<body class="lang-en fluid">
+   <div id="cern-toolbar">
+        <h1><a href="http://cern.ch" title="CERN">CERN <span>Accelerating science</span></a></h1>
+        <ul>
+            <!-- <li class="cern-accountlinks active"><a class="cern-account" href="https://home.web.cern.ch/Shibboleth.sso/?target=https%3A%2F%2Fhome.web.cern.ch%2F%3Fq%3Dshib_login%2Fnode%2F225" title="Sign in to your CERN account">Sign in</a></li> -->
+            <li><a class="cern-directory" href="http://cern.ch/directory" title="Search CERN resources and browse the directory">Directory</a>
+            </li>
+        </ul>
+   </div>
+
+    <div id="container" class="clear-block">
+        <div id="banner">
+            <a href="http://lhcb.cern.ch" id="link_lhcb" name="link_lhcb">
+                <img src="../../static/statistics/img/lhcb_logo.png" alt="LHCb" />
+            </a>
+            <h1>LHCb Nightly Builds Statistics</h1>
+        </div>
+
+        <div id="middle" class="clear-block cwf grid-fluid">
+
+	{%block content %}{% endblock %}
+
+        </div>
+        <!-- / middle -->
+
+        <div id="footer">
+            <p>CERN - European Laboratory for Particle Physics, CH-1211, Genève 23, Switzerland</p>
+            <!-- THE CERN_LOGO IS REQUIRED BY THE GRAPHIC CHARTER -->
+            <a id="cern_logo" class="badge_80" href="http://www.cern.ch" name="cern_logo">
+                <span>cern.ch</span>
+	</a>
+        </div>
+        <!-- / footer -->
+    </div>
+    <!-- / container -->
+            
+</body>
+</html>
+

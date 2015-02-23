@@ -1,0 +1,160 @@
+/* CSS for the Nightlies Release Dashboard */
+body {
+	padding: 0;
+}
+
+#viewall{
+	font-size: 120%;	
+	padding: 3px;
+}
+#confirm-build-info.*{
+	text-align:center;
+	
+}
+
+#dialog-confirm{
+	text-align: center;
+}
+
+.rebuild-button{
+	font-size: 110%;
+	padding-bottom:0px;
+	padding-left:2px;
+	padding-right:2px;
+	
+}
+
+h4 {
+	vertical-align:baseline;
+	font-size: 120%;
+	font-weight:500;
+}
+
+#links {
+	text-align: center;
+}
+
+#links li {
+	list-style: none;
+	display: inline-block;
+}
+
+#links a {
+	color: #666;
+	/*border-bottom: 1px solid;*/
+	padding: 1em;
+}
+
+#toolbar {
+	width: 25ex;
+	text-align: center;
+	float: right;
+}
+
+table.summary td {
+	padding: 0px;
+	text-align: center;
+	background-color: #F2F8FB;
+}
+
+table.summary th {
+	padding: 0.2em 0.5em;
+	text-align: center;
+	background-color: #E3F4FB;
+}
+
+table.summary tr.disabled td {
+	color: grey;
+	background-color: lightgrey;
+}
+
+table.summary tr.disabled th {
+	color: grey;
+	font-weight: normal;
+	background-color: lightgrey;
+}
+
+table.results {
+	width: 100%;
+}
+
+table.results td {
+	width: 50%;
+	padding: 0.2em;
+	border: none;
+	border-right: 1px solid #EAEAEA;;
+}
+table.summary td.success {background-color: #66FF66;}
+table.summary td.warning {background-color: #FFCC55;}
+table.summary td.failure {background-color: #FF6666;}
+
+table.results a {
+	color: black;
+}
+
+div.day {
+	margin-top: 2em;
+}
+
+div.slots {
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 1px;
+	padding: 1em;
+}
+
+.day table.header {
+	width: 100%;
+}
+
+.day table.header tr {
+	vertical-align: middle;
+}
+
+.day table.header td {
+	padding: 0.2em;
+}
+
+.day table.header td.button {
+	width: 6em;
+}
+
+.day table.header td.spinner {
+	width: 20px;
+	text-align: center;
+}
+
+.slot .slot-info {
+	font-weight: normal;
+	font-size: smaller;
+	text-align: center;
+}
+
+.slot .slot-info img {
+	vertical-align: middle;
+}
+
+.day th.lagging {
+	background-color: #FF6666;
+}
+
+.day-name {
+	font-size: 2.5em;
+	text-align: left;
+}
+
+.day .ui-button-text {
+	width: 4em;
+}
+
+table.buttons td {
+	border: none;
+	padding: 0.1em;
+}
+#rssform{
+	background-color:white;
+}
+
+#timeinfos{
+	position:relative;
+}
