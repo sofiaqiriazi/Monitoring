@@ -35,11 +35,11 @@ def getSec(s):
 def before_request():
     db = connect_db()
 
-@app.route('/')
+@app.route('statistics/')
 def show_entries():
     return render_template('know.html')
 
-@app.route('/slots/', methods=['GET'])
+@app.route('statistics/slots/', methods=['GET'])
 def slotInfo(): 
 
     slots = []
@@ -55,7 +55,7 @@ def slotInfo():
 
     return slats
 
-@app.route('/todayStats/',methods=['GET'])
+@app.route('statistics/todayStats/',methods=['GET'])
 def todayStats():
     slots = []
     #set date
@@ -112,7 +112,7 @@ def todayStats():
 
     return data
 
-@app.route('/makechart/',methods=['GET'])
+@app.route('statistics/makechart/',methods=['GET'])
 def makechart():
     #request view from couchdb
 
@@ -134,7 +134,7 @@ def makechart():
 
     return data
 
-@app.route('/slotsTimes/',methods=['GET'])
+@app.route('statistics/slotsTimes/',methods=['GET'])
 def slotsTimes():
     today = time.strftime("%Y-%m-%d")
 
@@ -162,7 +162,7 @@ def slotsTimes():
     return data
 
 #asfdasdfhasdkhjfadshkjfahkjlfshkjlfdsakljhfdsaflkjsadkjflhdas
-@app.route('/slotsResults/<slot_name>/',methods = ['GET'])
+@app.route('statistics/slotsResults/<slot_name>/',methods = ['GET'])
 def slotsResults(slot_name):
 
     today = time.strftime("%Y-%m-%d")
@@ -210,7 +210,7 @@ def slotsResults(slot_name):
 
     return data
 
-@app.route('/slotTimeInfo/<slot_name>/',methods = ['GET'])
+@app.route('statistics/slotTimeInfo/<slot_name>/',methods = ['GET'])
 def slotTimeInfo(slot_name): 
 
     today = time.strftime("%Y-%m-%d")
@@ -249,7 +249,7 @@ def slotTimeInfo(slot_name):
     data = json.dumps(data);         
     return data
 
-@app.route('/projectTimes/<slot_name>/<platform_name>')
+@app.route('statistics/projectTimes/<slot_name>/<platform_name>')
 def projectTimes(slot_name,platform_name):
     today = time.strftime("%Y-%m-%d")
 
